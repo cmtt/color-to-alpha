@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>color-to-alpha</title>
+  <style type="text/css">
+    #selected-color {
+      display: inline-block;
+      float: left;
+      width: 32px;
+      height: 32px;
+      border: 1px solid rgba(0,0,0,0.8);
+      margin-right: 18px;
+    }
+    #selected-color-code {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<h1>color-to-alpha</h1>
+<p>This replaces as much of a given color as possible in each pixel with a corresponding amount of alpha, then readjusts the color accordingly.
+</p>
+<div id="selected-color"></div>
+<span id="selected-color-code"> (nothing selected) </span>
+<br />
+Move the mouse over the <i>right</i> image to select a color, click to (un)lock the current selection.
+<p />
+<p>
+&mdash;
+Original implementation by <a href="https://git.gnome.org/browse/gimp/tree/plug-ins/common/color-to-alpha.c?h=gimp-2-8">Seth Burgess</a> &lt;sjburges@gimp.org&gt; for the <a href="http://www.gimp.org">GNU Image Manipulation Program</a>.
+7th Aug 1999
+<p>
+Image by <a href="http://commons.wikimedia.org/wiki/File:4-cube_4%5E4.png">Spinning Spark</a> on Wikimedia Commons.
+</p>
+<p></p>
+<script type="text/javascript" src="example.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "color-to-alpha",
+  "version": "0.0.1",
+  "description": "Creates an alpha channel for a specific color while preserving anti-aliasing",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp mocha"
+  },
+  "keywords": [
+    "image",
+    "color",
+    "alpha",
+    "channel",
+    "anti",
+    "aliasing"
+  ],
+  "author": "Matthias Thoemmes <git@gmx.org>",
+  "license": "GPLv3",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-mocha": "^2.0.0",
+    "through2": "^0.6.3",
+    "canvas": "^1.2.1",
+    "gulp-webmake": "0.0.3"
+  }
+}
