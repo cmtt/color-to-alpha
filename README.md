@@ -3,12 +3,13 @@ color-to-alpha
 
 A function which turns a given color for the given pixel transparent while attempting to preserve anti-aliasing.
 
+[Live demo](http://cmtt.github.io/color-to-alpha)
+
 Adapted from GIMP's [color-to-alpha plugin](https://git.gnome.org/browse/gimp/tree/plug-ins/common/color-to-alpha.c?h=gimp-2-8) by Seth Burgess, licenced under GPLv3:
 
 > (...) It will attempt to preserve anti-aliasing information by using a partially intelligent routine that replaces weak color information with weak alpha information. In this way, areas that contain an element of the selected color will maintain a blended appearance with their surrounding pixels.
 
 Source: [http://docs.gimp.org/en/plug-in-colortoalpha.html](http://docs.gimp.org/en/plug-in-colortoalpha.html)
-
 
 ## Usage
 
