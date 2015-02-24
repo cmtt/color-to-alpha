@@ -15,6 +15,7 @@ var noSelectionText = null;
 var boundDraw = null;
 var locked = false;
 var cache = {};
+var c = null;
 
 document.addEventListener('DOMContentLoaded', function () {
   selectedColorEl = document.getElementById('selected-color');
@@ -41,18 +42,15 @@ document.addEventListener('DOMContentLoaded', function () {
  */
 
 function _init (img) {
-  var c = document.createElement('canvas');
+  c = document.getElementById('view');
 
-  document.body.appendChild(c);
-
-  _bindEvents(c, img);
-  boundDraw = _getBoundDraw(c,img);
+  _bindEvents(img);
+  boundDraw = _getBoundDraw(img);
   boundDraw();
 }
 
 /**
  * @function
- * @param {object} c
  * @param {object} img
  */
 
@@ -66,11 +64,10 @@ function _getBoundDraw (c, img) {
 
 /**
  * @function
- * @param {object} c
  * @param {object} img
  */
 
-function _bindEvents(c, img) {
+function _bindEvents(img) {
   var ctx = c.getContext('2d');
 
   function _getXY (e) {
@@ -112,11 +109,10 @@ function _bindEvents(c, img) {
 
 /**
  * @function
- * @param {object} c
  * @param {object} img
  */
 
-function _draw(c, img) {
+function _draw(img) {
 
   var ctx = c.getContext('2d');
 

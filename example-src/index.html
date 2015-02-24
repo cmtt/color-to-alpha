@@ -13,6 +13,9 @@
     #selected-color-code {
       display: inline-block;
     }
+    canvas#view {
+      background-image: url(check.png);
+    }
   </style>
 </head>
 <body>
@@ -25,6 +28,7 @@
 <br />
 Move the mouse over the <i>right</i> image to select a color, click to (un)lock the current selection.
 <p />
+<canvas id="view"></canvas>
 <p>
 &mdash;
 Original implementation by <a href="https://git.gnome.org/browse/gimp/tree/plug-ins/common/color-to-alpha.c?h=gimp-2-8">Seth Burgess</a> &lt;sjburges@gimp.org&gt; for the <a href="http://www.gimp.org">GNU Image Manipulation Program</a>.

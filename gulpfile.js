@@ -27,6 +27,7 @@ gulp.task('webmake', function () {
 gulp.task('example', ['webmake'], function () {
   return gulp.src([
     'example-src/index.html',
+    'example-src/check.png',
     'spec/fixtures/**'
   ])
   .pipe(gulp.dest('example'))
